@@ -1,0 +1,79 @@
+body {
+
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/10/18/03/laptop-3214756_640.png');
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'kanit',cursive;
+    color: rgb(200, 207, 212);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    box-shadow: 2px 2px 2px #181818;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input[type="number"], select {
+    color: #dfdcdc;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    border: 1px solid #dfdcdc;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 2px;
+    outline: none;
+    position: relative;
+    padding: 12px
+}
+input[type="number"], select ::placeholder{
+    color: aliceblue;
+
+}
+
+button {
+    font-size: inherit;
+    margin-top: 10px;
+    border: none;
+    color:#101010;
+    background-color: #367fc8;
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 1px 1px 10px #21088e;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

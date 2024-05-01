@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lappy-Dekho</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lappy-Dekho</h1>
+        <form id="price-form">
+            <label for="storage">Storage (GB):</label>
+            <select id="storage" name="storage">
+                <option value="512">512</option>
+                <option value="1024">1024</option>
+                <option value="2048">2048</option>
+            </select><br>
+
+            <label for="ram">RAM (GB):</label>
+            <select id="ram" name="ram">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+            </select><br>
+
+
+            <label for="g_size">Graphics Size (GB):</label>
+            <select id="g_size" name="g_size">
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select><br>
+
+            <label for="gp_card">Graphics Card:</label>
+            <select id="gp_card" name="gp_card">
+                <option value="nil">Nil</option>
+                <option value="gtx-1650">GTX 1650</option>
+                <option value="rtx-3050">RTX 3050</option>
+            </select><br>
+
+            <label for="processor">Processor:</label>
+            <select id="processor" name="processor">
+                <option value="i3">i3</option>
+                <option value="i5">i5</option>
+                <option value="i7">i7</option>
+            </select><br>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
